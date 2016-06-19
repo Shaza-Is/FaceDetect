@@ -20,7 +20,7 @@ public slots:
     QImage detect(Mat frame);
 
 private:
-    String                   face_cascade_name;
+    String                   cascade_name;
     CascadeClassifier        face_cascade;
     std::vector<Rect>        foundFaces;
     QList<CvScalar>          colorsCol;

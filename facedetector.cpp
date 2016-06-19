@@ -2,8 +2,8 @@
 #include <QDebug>
 FaceDetector::FaceDetector()
 {
-    face_cascade_name = "/home/shaza/Desktop/Projects/AvidBeam/InterviewTask/FaceDetect/haarcascade_frontalface_default.xml";
-    if( !face_cascade.load( face_cascade_name ) ){ qDebug() << "--(!)Error loading\n";}
+    cascade_name = "/home/shaza/Desktop/Projects/AvidBeam/InterviewTask/FaceDetect/haarcascade_frontalface_default.xml";
+    if(!face_cascade.load(cascade_name)){ qDebug() << "--(!)Error loading\n";}
 
     /*8 colors collection*/
     colorsCol   << cvScalar(0.0,0.0,255.0)   << cvScalar(0.0,128.0,255.0)

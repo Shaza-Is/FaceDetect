@@ -1,9 +1,11 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+//qt includes
 #include <QMainWindow>
 #include <QGraphicsView>
 #include <QTimer>
+//local include
 #include "facedetector.h"
 
 namespace Ui {

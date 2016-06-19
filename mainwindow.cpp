@@ -10,6 +10,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     detector = FaceDetector();
     intervalTimer = new QTimer(this);
+    pixmap = new QPixmap();
+    scene = new QGraphicsScene();
 }
 
 MainWindow::~MainWindow()
