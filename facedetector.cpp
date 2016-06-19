@@ -21,7 +21,7 @@ QImage FaceDetector::detect(Mat frame)
     //Detection
     face_cascade.detectMultiScale(frame_gray,
                                   foundFaces,
-                                   1.1, 2, 0|CASCADE_SCALE_IMAGE, Size(30, 30));
+                                   1.1, 2, 0|CASCADE_SCALE_IMAGE, Size(100, 100));
 
     int n = foundFaces.size();
     //Draw rectangles around faces
